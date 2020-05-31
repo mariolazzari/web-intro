@@ -1,3 +1,5 @@
+/* tag */
+
 h1 {
   color: red;
   font-size: 5em;
@@ -40,3 +42,35 @@ ol {
 li {
   color: brown;
 }
+
+/* classes */
+.branding2 {
+  color: blue;
+  border: 1px solid black;
+}
+
+.branding {
+  color: red;
+}
+
+.blog-post-title {
+  color: green;
+}
+
+/* specificity */
+h1.title {
+  color: orange;
+} /* 11 */
+
+.title.title-5 {
+  color: purple;
+} /* 20 -> wins*/
+
+/* id */
+#my-title {
+  color: coral;
+} /*  specificy 100 */
+
+.important {
+  color: green !important;
+} /* overrides specificy */
