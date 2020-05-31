@@ -74,3 +74,88 @@ h1.title {
 .important {
   color: green !important;
 } /* overrides specificy */
+
+/* peudo selector */
+.hover-example {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: green;
+}
+
+.hover-example:hover {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+
+/* first child */
+.first-child {
+  color: crimson;
+}
+
+.first-child:first-child {
+  color: green;
+}
+
+.child:nth-child(odd) {
+  color: lightgreen;
+}
+
+.child:nth-child(even) {
+  color: red;
+}
+
+/* wild card */
+* {
+  box-sizing: border-box;
+}
+
+/* BOX model */
+.box {
+  border: 3px solid red;
+  padding: 5px;
+  margin: 25px;
+  background-color: white;
+}
+
+/* Floats */
+.float div {
+  float: left;
+}
+
+.float-1 {
+  border: 1px solid black;
+  color: white;
+  background-color: blue;
+  height: 150px;
+  width: 300px;
+}
+
+.float-2 {
+  align-self: flex-end;
+  border: 1px solid black;
+  color: white;
+  background-color: red;
+  height: 100px;
+  width: 300px;
+}
+
+.float-3 {
+  border: 1px solid black;
+  color: white;
+  background-color: green;
+  height: 200px;
+  width: 100px;
+}
+
+/* Flex */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  border: 1px solid black;
+}
